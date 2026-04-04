@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(120deg, #e53935 0%, #1e88e5 45%, #43a047 75%, #fdd835 100%);
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.logo-space {
+    width: 0.4em;
+}
+
+.logo .red {
+    color: #e53935;
+}
+
+.logo .green {
+    color: #43a047;
+}
+
+.logo .yellow {
+    color: #fdd835;
+}
+
+.logo .blue {
+    color: #1e88e5;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+nav ul li:nth-child(1) a {
+    background-color: rgba(229, 57, 53, 0.95);
+}
+
+nav ul li:nth-child(2) a {
+    background-color: rgba(30, 136, 229, 0.95);
+}
+
+nav ul li:nth-child(3) a {
+    background-color: rgba(67, 160, 71, 0.95);
+}
+
+nav ul li:nth-child(4) a {
+    background-color: rgba(253, 216, 53, 0.95);
+    color: #2b2b2b;
+}
+
+nav ul li a:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.05);
+}
+
+.hero {
+    background-image:
+        linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(25, 25, 25, 0.55)),
+        url('images/turma do mario.jpg'),
+        url('images/mario cart.jpg'),
+        url('images/Super Mario Odyssey.jpg');
+    background-size: cover, 40%, 28%, 28%;
+    background-position: center, left 2% center, right 3% center, center 72%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.hero-image {
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.about-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn {
+    background-color: #fff;
+    color: #e74c3c;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about, .games {
+    padding: 4rem 0;
+}
+
+.about,
+.games,
+footer {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background-image:
+        linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(25, 25, 25, 0.55)),
+        url('images/turma do mario.jpg'),
+        url('images/mario cart.jpg'),
+        url('images/Super Mario Odyssey.jpg');
+    background-size: cover, 40%, 28%, 28%;
+    background-position: center, left 2% center, right 3% center, center 72%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about::before,
+.games::before,
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(to right, #f1c40f, #e74c3c, #f1c40f);
+    box-shadow: 0 0 14px rgba(241, 196, 15, 0.55);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about h2, .games h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.about p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.game-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.game p {
+    color: #000;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+@media (max-width: 900px) {
+    .hero,
+    .about,
+    .games,
+    footer {
+        background-image:
+            linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(25, 25, 25, 0.58)),
+            url('images/turma do mario.jpg');
+        background-size: cover, 120%;
+        background-position: center, center;
+        background-attachment: scroll;
+    }
+}
