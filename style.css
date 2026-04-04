@@ -42,22 +42,23 @@ nav {
 }
 
 .logo-space {
+    display: inline-block;
     width: 0.4em;
 }
 
-.logo .red {
+.red {
     color: #e53935;
 }
 
-.logo .green {
+.green {
     color: #43a047;
 }
 
-.logo .yellow {
+.yellow {
     color: #fdd835;
 }
 
-.logo .blue {
+.blue {
     color: #1e88e5;
 }
 
@@ -234,6 +235,12 @@ footer::before {
 
 .game p {
     color: #000;
+}
+
+.game h3 {
+    color: #000;
+    letter-spacing: normal;
+    word-spacing: normal;
 }
 
 .game-image {
