@@ -127,10 +127,12 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: min(92vw, 980px);
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.65rem;
+    max-width: 18ch;
     margin-bottom: 1rem;
     line-height: 1.15;
 }
@@ -142,8 +144,8 @@ nav ul li a:hover {
 }
 
 .hero-image {
-    max-width: 800px;
-    width: 100%;
+    width: min(92vw, 300px);
+    max-width: 100%;
     height: auto;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -296,6 +298,10 @@ footer {
         font-size: 2.25rem;
     }
 
+    .hero-image {
+        width: min(88vw, 560px);
+    }
+
     .hero-content p {
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
@@ -355,6 +361,10 @@ footer {
         margin-bottom: 1.2rem;
     }
 
+    .hero-image {
+        width: min(90vw, 480px);
+    }
+
     .btn {
         padding: 0.55rem 0.95rem;
     }
@@ -396,6 +406,10 @@ footer {
 
     .hero-content h1 {
         font-size: 1.55rem;
+    }
+
+    .hero-image {
+        width: min(94vw, 360px);
     }
 
     .about p {
